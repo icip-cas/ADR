@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Data Schema",
+    "definition": "* **Definition:** A precise, abstract description of the input data the code will consume: its origin (file, DB, in-memory), high-level structure (table/array/tensor/graph), dimensions or shape signatures, named fields or column types, and any distributional or ordering properties that affect processing.\n* **Role:** States what the program receives so implementers know how to parse, index, and validate inputs; without it the operation cannot be applied correctly.\n* **Variation Axes:** source (CSV/JSON/SQL/in-memory), container type (DataFrame / ndarray / sparse matrix / list / dict), schema detail level (full typed schema vs. loose shape), size scale (small/medium/large/streaming), ordering guarantees (sorted/partitioned/grouped/random)."
+  },
+  {
+    "name": "Task Goal",
+    "definition": "* **Definition:** A concise, testable description of the transformation, computation, or analysis to perform on the input data. It describes the expected semantic outcome (e.g., \"reorder rows by index list\", \"normalize each column in-place\", \"reshape a 1-D sequence into a 2-D matrix\").\n* **Role:** Provides the objective that determines what code must do; without it there is no target behavior to implement.\n* **Variation Axes:** transformation type (filter/aggregate/transform/reorder/reshape/compute stat), granularity (column-wise/row-wise/matrix-level/element-wise), in-place vs. functional (mutating or returning new object), deterministic vs. randomized, single-step vs. pipeline of steps."
+  },
+  {
+    "name": "Output Contract",
+    "definition": "* **Definition:** An explicit specification of the result: types, shapes, naming/variable expectations, ordering of outputs, side-effects (files written, in-place mutation), and the acceptance criteria (what constitutes a correct result).\n* **Role:** Defines how the success of the Task Goal is observed and integrated downstream; it removes ambiguity about return types and side-effects.\n* **Variation Axes:** return style (value/tuple/None + side-effects), naming (specific variable name required vs. any), strictness of shape/type (exact shape vs. compatible), required persistence (save to file/DB vs. ephemeral), error signaling mode (exceptions/error codes)."
+  },
+  {
+    "name": "Implementation Environment",
+    "definition": "* **Definition:** The technical context in which the solution must run: permitted libraries and APIs.\n* **Role:** Constrains feasible solutions and guides use of tool-specific APIs; without it solutions may use unsupported constructs or libraries.\n* **Variation Axes:** allowed libraries and formats."
+  },
+  {
+    "name": "Behavioral Constraints",
+    "definition": "* **Definition:** Non-functional and precondition requirements that affect algorithm choice: mutability requirements, numerical stability, memory/time complexity targets, guaranteed invariants in inputs (e.g., \"columns contain non-negative numbers\"), and failure modes to avoid.\n* **Role:** Ensures the implementation respects important operational and correctness constraints that the Task Goal alone does not cover.\n* **Variation Axes:** mutability (must/should not mutate input), complexity bounds (O(n)/O(n log n)/approximate), numeric precision needs (float32/64, tolerance), concurrency safety, expected input cleanliness (may contain NaNs/missing/duplicates)."
+  }
+]

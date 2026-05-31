@@ -1,0 +1,22 @@
+# Data files
+*.jsonl
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+.env.*
+
+# Output directories
+iter_*/
+
+# Editor
+.vscode/
+.idea/
+*.swp

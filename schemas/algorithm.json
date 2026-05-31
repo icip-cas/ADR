@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Core Algorithm Idea",
+    "definition": "- Extract the essential algorithmic principle required to solve the problem.\n- Follow these rules:\n    - Identify the **primary computational technique** (e.g., greedy strategy with a specific invariant, DP with defined states and transitions, graph traversal with constraints, combinatorial search, optimization structure).\n    - Focus on the **abstract reasoning pattern**, not the implementation details.\n    - Ensure the idea is **specific enough** to distinguish it from other techniques, but **general enough** to be reused in new problems.\n    - Highlight key structural properties (optimal substructure, monotonicity, connectivity, constraint types, state formulation, etc.)"
+  },
+  {
+    "name": "Story Background",
+    "definition": "- Describe a simple and generic narrative theme that provides motivation or flavor for the problem in one abstract, conceptual sentence.\n- Follow these rules:\n    - Be conceptual rather than operational (e.g., \"managing resources\", \"tracking evolving states\", \"navigating a structure\").\n    - Avoid concrete rules, numeric details, domain-specific mechanics, or anything implying algorithmic constraints.\n    - Not depend on specific data types, input formats, or procedures — those belong to other elements. The background should be flexible enough to pair with many different algorithmic cores without creating conflicts."
+  },
+  {
+    "name": "Strategy Diversity",
+    "definition": "- List the legitimate algorithmic approaches that could solve the problem **in principle**, and explain why.\n- Follow these rules:\n    - Cover the full spectrum of viable strategies:\n        - Greedy (local optimality conditions)\n        - Dynamic Programming (state decomposition)\n        - Graph search (DFS/BFS/backtracking)\n        - Data-structure-driven optimization (segment tree, union-find, Fenwick tree, etc.)\n        - Approximation/heuristics (if NP-hard structures are implied)\n    - Explain the **structural justification** (e.g., overlapping subproblems, convexity, combinatorial explosion).\n    - These should be **strategies that could plausibly apply**, not necessarily the optimal one."
+  },
+  {
+    "name": "Difficulty Level",
+    "definition": "- Classify the problem's difficulty based on conceptual and implementation challenges.\n- Follow these rules:\n    - Use the scale: **Beginner / Intermediate / Advanced**.\n    - Consider:\n        - Core concepts required\n        - Input size limits\n        - Edge-case density\n        - Data structure sophistication\n        - Theoretical complexity (polynomial vs NP-hard)\n    - Justify the classification clearly."
+  }
+]

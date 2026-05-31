@@ -1,0 +1,9 @@
+openai==1.90.0
+tenacity==9.1.4
+tqdm==4.67.3
+requests==2.32.5
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+sentence-transformers==5.3.0

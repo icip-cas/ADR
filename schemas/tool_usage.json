@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Computational Objective",
+    "definition": "* **Definition:** An abstract specification of the primary computation or transformation to be performed on data, independent of implementation details.\n* **Role:** Defines *what* the task fundamentally does; without it, the task has no semantic goal.\n* **Variation Axes:**\n    * Type of computation (aggregation, generation, transformation, analysis)\n    * Deterministic vs stochastic behavior\n    * Single-stage vs multi-stage computation"
+  },
+  {
+    "name": "Tool Dependency Set",
+    "definition": "* **Definition:** The set of external libraries, modules, or tools that must be imported and used to accomplish the task.\n* **Role:** Distinguishes this task type as a *tool-calling* problem; ensures the task demonstrates use of specific utilities beyond core language constructs.\n* **Variation Axes:**\n    * Standard library vs third-party tools\n    * Number of tools\n    * Functional role of tools (randomness, statistics, iteration, collections, etc.)"
+  },
+  {
+    "name": "Processing Logic Constraints",
+    "definition": "* **Definition:** High-level rules or required operations that constrain how the computation must be carried out, without prescribing exact code.\n* **Role:** Ensures the task exercises particular patterns (e.g., shuffling before computing, sorting by a derived metric).\n* **Variation Axes:**\n    * Ordering of operations\n    * Required intermediate transformations\n    * Use of specific functions or methods from the tools"
+  },
+  {
+    "name": "Input Interface",
+    "definition": "* **Definition:** A formal description of the function inputs, including parameter names, types, defaults, and constraints.\n* **Role:** Establishes how external data enters the task; necessary for invoking the computation.\n* **Variation Axes:**\n    * Number of parameters\n    * Data types (scalars, lists, dicts, strings, etc.)\n    * Default values\n    * Validity constraints (ranges, non-negativity, non-emptiness)"
+  },
+  {
+    "name": "Output Specification",
+    "definition": "* **Definition:** A precise description of the expected output type, structure, and semantic meaning.\n* **Role:** Defines task completion criteria; without it, correctness cannot be evaluated.\n* **Variation Axes:**\n    * Output data type (float, dict, list, etc.)\n    * Structural properties (sorted, aggregated, keyed by…)\n    * Deterministic vs stochastic output interpretation"
+  }
+]
