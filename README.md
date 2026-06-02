@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/ICIP/ADR)
-[![arXiv](https://img.shields.io/badge/arXiv-2604.27467-b31b1b.svg)](https://arxiv.org/abs/2604.27467)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.31058-b31b1b.svg)](https://arxiv.org/abs/2605.31058)
 
 </div>
 
